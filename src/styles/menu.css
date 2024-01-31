@@ -1,0 +1,45 @@
+* {
+    padding: 1%;
+}
+
+.menu {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    /* Para alinear los elementos a los extremos */
+    padding-top: 2rem;
+
+}
+
+#titulo {
+    font-size: 2rem;
+    /* Tamaño de la fuente */
+
+    /* Espacio alrededor de cada enlace */
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-link:not(:last-child):after {
+    content: "|";
+    /* Agrega una línea vertical después de cada elemento, excepto el último */
+    margin-left: 10px;
+    /* Ajusta el espacio entre el texto y la línea vertical */
+}
+
+@media (max-width: 990px) {
+    .nav-link:not(:last-child):after {
+        display: none;
+    }
+}
+
+
+.nav-link {
+    font-size: 1.5rem;
+    /* Tamaño de la fuente */
+    padding: 0.5rem 1rem;
+    /* Espacio alrededor de cada enlace */
+
+}
