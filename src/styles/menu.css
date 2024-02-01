@@ -30,6 +30,10 @@
 }
 
 @media (max-width: 990px) {
+    * {
+        padding: 0%;
+    }
+
     .nav-link:not(:last-child):after {
         display: none;
     }

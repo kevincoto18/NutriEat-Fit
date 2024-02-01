@@ -1,5 +1,59 @@
 .card {
-    margin-top: 5%;
+    margin-top: 4.5%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
     height: 40rem;
     background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-style: none;
+}
+
+.card-body {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.carrusel {
+
+    display: flex;
+    justify-content: center;
+    /* Centrar horizontalmente */
+    align-items: center;
+    /* Centrar verticalmente */
+    max-width: 100%;
+    /* Ancho máximo */
+}
+
+.carrusel img {
+    max-width: 100%;
+    /* Asegurar que la imagen sea responsive */
+    height: auto;
+    /* Ajustar la altura automáticamente */
+}
+
+.title {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.texto-normal {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .card-body {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .card-content .col {
+        flex: none;
+        width: auto;
+    }
 }

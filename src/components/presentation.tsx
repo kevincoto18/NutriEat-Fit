@@ -3,8 +3,25 @@ import "../styles/presentation.css";
 function Presentation() {
   return (
     <div className="card">
-      <div className="card-body">
-        Aqui va a ir 2 cards, uno para la descripcion y otro para el carrusel
+      <div className="card-body" id="contenedor">
+        <div className="flex-grow-1" id="ladoa">
+          <div id="ladoa-content">
+            <div className="title">
+              Prepara tus recetas con tus ingredientes favoritos!
+            </div>
+            <div className="texto-normal">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+              id qui delectus libero! Accusamus repudiandae pariatur repellat
+              illo praesentium aut nulla veritatis commodi quisquam sequi! Alias
+              eius perferendis ducimus eum!
+            </div>
+          </div>
+        </div>
+        <div className="flex-grow-1" id="ladob">
+          <div className="carrusel">
+            <img src="../../public/prueba.svg" alt="50px" />
+          </div>
+        </div>
       </div>
     </div>
   );
