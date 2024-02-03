@@ -15,6 +15,15 @@ function Presentation() {
               illo praesentium aut nulla veritatis commodi quisquam sequi! Alias
               eius perferendis ducimus eum!
             </div>
+            <div className="buttons">
+              <button className="btnA" role="button">
+                Empecemos!
+              </button>
+
+              <button className="btnB" role="button">
+                Calcular Peso
+              </button>
+            </div>
           </div>
         </div>
         <div className="flex-grow-1" id="ladob">

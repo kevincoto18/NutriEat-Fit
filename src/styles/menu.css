@@ -2,48 +2,67 @@
     padding: 1%;
 }
 
+.navbar {
+    color: black;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    /* Anchura del 100% para ocupar todo el espacio horizontal */
+}
+
 .menu {
     width: 100vw;
     display: flex;
     justify-content: space-between;
-    /* Para alinear los elementos a los extremos */
     padding-top: 2rem;
-
+    /* Espacio superior */
 }
+
+.scrolled {
+    transition: background-color 0.5s ease;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* Transición suave del color de fondo */
+}
+
+.scrolled .navbar {
+    border: 10px solid rgba(255, 255, 255, 0.2);
+    /* Borde con transparencia */
+}
+
+
 
 #titulo {
     font-size: 2rem;
-    /* Tamaño de la fuente */
-
-    /* Espacio alrededor de cada enlace */
+    /* Tamaño de fuente para el título */
 }
 
 .navbar-nav {
     margin-left: auto;
+    /* Alinear los elementos a la derecha */
 }
 
-.nav-link:not(:last-child):after {
+.nav-link {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    /* Espacio alrededor de cada enlace */
+}
+
+.nav-link:not(:last-child)::after {
     content: "|";
-    /* Agrega una línea vertical después de cada elemento, excepto el último */
     margin-left: 10px;
     /* Ajusta el espacio entre el texto y la línea vertical */
 }
 
 @media (max-width: 990px) {
     * {
-        padding: 0%;
+        padding: 0;
+        margin: 0;
     }
 
-    .nav-link:not(:last-child):after {
+    .nav-link:not(:last-child)::after {
         display: none;
     }
-}
-
-
-.nav-link {
-    font-size: 1.5rem;
-    /* Tamaño de la fuente */
-    padding: 0.5rem 1rem;
-    /* Espacio alrededor de cada enlace */
-
 }
