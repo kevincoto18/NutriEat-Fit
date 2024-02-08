@@ -1,0 +1,129 @@
+.cardRecipe {
+    min-width: 20vw;
+    margin: 2% 8%;
+    height: 40rem;
+    /* background-color: red; */
+    border: 1px solid rgb(214, 212, 212);
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+    /* Permite el desplazamiento vertical cuando el contenido excede la altura */
+}
+
+
+.ingredient-row {
+    display: flex;
+    align-items: center;
+
+    /* Establece la altura máxima del cardRecipe */
+}
+
+.ingredient-row input {
+    margin-right: 5px;
+    /* Espacio entre los elementos */
+}
+
+
+.card-body {
+    display: flex;
+    padding-bottom: 1rem;
+    padding-left: 5%;
+    /* Añade espacio debajo del formulario */
+}
+
+#lado1 {
+    /* background-color: aqua; */
+
+    width: 50%;
+}
+
+#lado2 {
+    /* background-color: brown; */
+
+    width: 50%;
+}
+
+#resultrecipe {
+
+    border-radius: 16px;
+    height: 30rem;
+    width: 95%;
+    margin: auto;
+
+
+}
+
+
+.ingredient-row {
+    margin-bottom: 0.75rem;
+    /* Añade espacio entre cada fila de ingredientes */
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+button {
+
+    margin: 0 10px;
+}
+
+#GenerateRecipe,
+#AddIngredient {
+    border-radius: 16px;
+}
+
+
+
+@media (max-width: 1000px) {
+    .cardRecipe {
+        padding: 1%;
+        /* Ajustar el padding según sea necesario */
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0%;
+        height: auto;
+        width: 0 auto;
+        margin: 1%;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+        /* Cambiar la dirección del flexbox a columna y alinear los elementos al estiramiento */
+    }
+
+    #Ingredients {
+        padding: 4% 2%;
+    }
+
+    .button-container {
+        display: grid;
+        flex-direction: row-reverse;
+
+    }
+
+    button {
+
+        margin: 10px;
+    }
+
+    #lado1,
+    #lado2 {
+        width: 100%;
+        /* Establecer el ancho completo para que estén uno debajo del otro */
+    }
+
+    .ingredient-row input {
+        margin-bottom: 0.5rem;
+        /* Añadir espacio entre los inputs en pantallas pequeñas */
+    }
+
+    .ingredient-row input {
+        margin-bottom: 0.5rem;
+        /* Añade espacio entre los inputs en pantallas pequeñas */
+    }
+}

@@ -4,6 +4,19 @@ import "../styles/menu.css";
 
 function Menu() {
   const [scrolled, setScrolled] = useState(false);
+  const handleScrollToRecipe = () => {
+    const recipeComponent = document.getElementById("Ingredients");
+    if (recipeComponent) {
+      recipeComponent.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleScrollToHome = () => {
+    const recipeComponent = document.getElementById("homepage");
+    if (recipeComponent) {
+      recipeComponent.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,18 +47,23 @@ function Menu() {
       >
         NutriEat Fit
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="navbarNavAltMarkup" />
+      <Navbar.Toggle
+        aria-controls="navbarNavAltMarkup"
+        className={scrolled ? "navbar-dark" : "navbar-light"}
+      />
       <Navbar.Collapse id="navbarNavAltMarkup">
         <Nav className="navbar-nav">
           <Nav.Link
             href="#"
             className={`nav-link ${scrolled ? "text-white" : ""}`}
+            onClick={handleScrollToHome}
           >
             Inicio
           </Nav.Link>
           <Nav.Link
             href="#"
             className={`nav-link ${scrolled ? "text-white" : ""}`}
+            onClick={handleScrollToRecipe}
           >
             Recetas
           </Nav.Link>

@@ -1,17 +1,18 @@
-* {
-    padding: 1%;
-}
-
 .navbar {
+    padding: 1% 4%;
+    margin-top: 5%;
+    margin: 5% auto;
     color: black;
     position: sticky;
     top: 0;
     z-index: 1000;
-    width: 100%;
+    width: 95%;
+    height: 7rem;
     /* Anchura del 100% para ocupar todo el espacio horizontal */
 }
 
 .menu {
+
     width: 100vw;
     display: flex;
     justify-content: space-between;
@@ -20,7 +21,7 @@
 }
 
 .scrolled {
-    transition: background-color 0.5s ease;
+    transition: background-color 1s ease;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -61,6 +62,13 @@
         padding: 0;
         margin: 0;
     }
+
+    .navbar {
+        height: auto;
+        width: 100%;
+        margin-top: 0;
+    }
+
 
     .nav-link:not(:last-child)::after {
         display: none;
